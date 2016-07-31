@@ -1,0 +1,92 @@
+* lua学习笔记
+** basic
+   print("10" + 1) =======> 11.0  amazing
+   print("10 + 1") =======> 10+1
+   
+   first character of a string has index 1
+   可变参数函数  fun( ... )
+   通过table传递named arg
+** TODO Exercise 
+   eight-queen :
+   most frequent words:
+   read 《programming in lua》 part2
+** advance
+   table.concat拼接字符串 效率远高于 .. 
+   利用goto模拟continue
+   while c do
+       if c then 
+           goto continue
+       else
+           do something
+       end
+       ::continue:: 
+   end
+   tail call(尾调用) : return fun() end  不在stack保存调用fun的信息 空间复杂度O(1) 
+   
+   Entry{} == Entry({})   use dofile() read data from file save as table formated
+
+   __index  lua单继承实现
+   use __newindex make a table read-only
+** hacking
+   
+* Cpp学习笔记
+** basic
+   
+** advance
+
+** hacking
+
+* Cocos2d-x学习笔记
+** basic
+
+** advance
+*** 使用notificationNode 可以使一些东西独立于scene显示   (比如全局手柄之类的)
+   	auto joystick = Joystick::create();
+		joystick->setOpacity(150);
+		Director::getInstance()->setNotificationNode(joystick);
+
+** problems
+*** don't have 64bit lib
+    cocos compile -p android --ndk-mode debug --ndk-toolchain arm-linux-androideabi-4.9 --app-abi armeabi 
+
+    You will need to replace the --ndk-toolchain to the proper one that comes with your NDK installation.
+    Check in the toolchains folder inside NDK_ROOT.
+    The most important one that actually got it working was --app-abi armeabi as that is what was the toolchain used.
+    [Edit] If you actually check cocos compile -h you will see that --app-abi mentions armeabi as the default.
+    But that is not the case. It is picking up arm64 as the default.
+
+*** libfmod.so.6 not found    
+    1) copy
+    sudo cp <COCOS FOLDER LOCATION>/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so /usr/local/lib/
+    sudo cp <COCOS FOLDER LOCATION>/external/linux-specific/fmod/prebuilt/64-bit/libfmodL.so /usr/local/lib/
+
+   2) create symbolic link in /usr/local/lib/
+    ln -s libfmod.so libfmod.so.
+
+   3) run ./install-deps-linux again
+
+
+** hacking
+
+* OpenGl学习笔记
+** basic
+
+** advance
+
+** hacking
+
+* Spacemacs配置记录
+** layers
+* Cmake
+** command
+* Git 
+** command
+   
+** skill
+*** delete commit 
+    git log  -- get hash code to roll back
+    git rest --head hashcode 
+
+
+
+   
