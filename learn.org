@@ -31,7 +31,28 @@
    
 * Cpp学习笔记
 ** basic
-   
+*** constexpr
+   使用constexpr 而不是const来声明常量表达式
+   const int *p = nullptr; //p是一个指向整型常量的指针
+   constexpr int *p = nullprt; //p是一个指向整型的常量指针
+*** TODO auto关键字可能会造成顶层const被忽略
+*** TODO decltype 获取表达式的类型 
+    decltype(f()) sum = x;
+*** 类内初始值只能放在花括号里边或者等号右边  不能使用圆括号！！！
+*** vector
+    不存在包含引用的Vector
+    c++11标准之前的vector<vector<int>> 需写出 vector<vector<int> > (注意右尖括号左边的空格)
+    vector对象的下标可以用于访问 不能用于添加元素
+**** 初始化
+     1.在使用拷贝初始化（即 =）时,只能提供一个初始值
+     2.如果提供的是一个类内初始值,只能使用拷贝初始化或者花括号形式的初始化
+     3.如果提供的时初始值列表,只能使用花括号初始化
+*** 比较运算符用于c风格字符串比较的是指针而不是字符串本身  必须用strcmp()方法进行比较
+
+*** TODO array&& point
+*** 后置递增/递减运算符的优先级高于解引用运算符
+*** TODO 位运算符
+*** TODO cast类型转换
 ** advance
 
 ** hacking
