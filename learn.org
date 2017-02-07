@@ -1,4 +1,4 @@
-* lua学习笔记
+* lua学习笔记 
 ** basic
    print("10" + 1) =======> 11.0  amazing
    print("10 + 1") =======> 10+1
@@ -108,6 +108,3 @@
     git log  -- get hash code to roll back
     git rest --head hashcode 
 
-
-
-   
