@@ -75,17 +75,17 @@ close一个TCP socket的缺省行为时把该socket标记为以关闭，然后�
 ## Tcp过程 ##
 
 1.三次握手连接过程如下：  
-![](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157467258.png)
+![](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157467258.png "三次握手过程")
 
 **总结：客户端的connect在三次握手的第二个次返回，而服务器端的accept在三次握手的第三次返回。**
 
 2.四次分手过程如下：  
-![](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157487616.png)
+![](http://images.cnblogs.com/cnblogs_com/skynet/201012/201012122157487616.png "四次分手过程")
 
 
 ## 一个栗子--Tcp ##
 1.示例图：  
-![](http://images.cnblogs.com/cnblogs_com/chenxizhang/WindowsLiveWriter/TCPUDP_EF8C/image_2.png)
+![](http://images.cnblogs.com/cnblogs_com/chenxizhang/WindowsLiveWriter/TCPUDP_EF8C/image_2.png "Tcp示例图")
 
 2.服务器代码：  
 
@@ -195,7 +195,7 @@ close一个TCP socket的缺省行为时把该socket标记为以关闭，然后�
 
 ## 另一个栗子--Udp ##
 1.示例图：  
-![](http://images.cnblogs.com/cnblogs_com/chenxizhang/WindowsLiveWriter/TCPUDP_EF8C/image_4.png)
+![](http://images.cnblogs.com/cnblogs_com/chenxizhang/WindowsLiveWriter/TCPUDP_EF8C/image_4.png "Udp示例图")
 
 2.服务器代码：  
 
