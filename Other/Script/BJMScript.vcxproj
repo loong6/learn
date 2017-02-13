@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Editor|Win32">
+      <Configuration>Editor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4015C14-04E3-4BDD-A977-F82D5EDFECDC}</ProjectGuid>
+    <RootNamespace>BJMScript</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(COCOS2D_HOME_3)\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS2D_HOME_3)\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(COCOS2D_HOME_3)\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS2D_HOME_3)\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(COCOS2D_HOME_3)\bin\$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">
+    <OutDir>$(COCOS2D_HOME_3)\bin\$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(COCOS2D_HOME_3)\BJMEngine\BJMFoundation\classes;$(COCOS2D_HOME_3)\BJMEditorBridge\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMSerialization\classes;$(COCOS2D_HOME_3)\;$(COCOS2D_HOME_3)\BJMEngine\BJMApp\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMPublish\classes;$(COCOS2D_HOME_3)\BJMPackage\BJMPackageTool\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMGui\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMScript\classes;$(COCOS2D_HOME_3)\BJMCommon;$(COCOS2D_HOME_3)\BJMEngine\BJMResource\classes;$(COCOS2D_HOME_3)\BJMPackage\stormlib\src;$(COCOS2D_HOME_3)\BJMEngine\BJMProfile\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMSound\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMExtLibs\classes;$(COCOS2D_HOME_3)\cocos2d\external\curl\include\win32;$(COCOS2D_HOME_3)\BJMEngine\OpenAL_Mob\include;$(COCOS2D_HOME_3)\BJMEngine\BJMGame\classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__WIN32__;BJM_TARGET_PLATFORM = BJM_PLATFORM_WIN32;CC_TARGET_PLATFORM == CC_PLATFORM_WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;BJM_DEBUG=1;USE_SCRIPT;USE_ZIP;USE_MPQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile/BJMScriptPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(COCOS2D_HOME_3)\BJMEngine\BJMFoundation\classes;$(COCOS2D_HOME_3)\BJMEditorBridge\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMSerialization\classes;$(COCOS2D_HOME_3)\;$(COCOS2D_HOME_3)\BJMEngine\BJMApp\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMPublish\classes;$(COCOS2D_HOME_3)\BJMPackage\BJMPackageTool\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMGui\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMScript\classes;$(COCOS2D_HOME_3)\BJMCommon;$(COCOS2D_HOME_3)\BJMEngine\BJMResource\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMProfile\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMSound\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMExtLibs\classes;$(COCOS2D_HOME_3)\BJMEngine\BJMGame\classes;$(COCOS2D_HOME_3)\BJMPackage\stormlib\src;$(COCOS2D_HOME_3)\cocos2d\external\curl\include\win32;$(COCOS2D_HOME_3)\BJMEngine\OpenAL_Mob\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__WIN32__;BJM_TARGET_PLATFORM = BJM_PLATFORM_WIN32;CC_TARGET_PLATFORM = CC_PLATFORM_WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;BJM_DEBUG=1;USE_EDITOR;USE_SCRIPT;USE_ZIP;USE_MPQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile/BJMScriptPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2d\cocos\scripting\lua-bindings\proj.win32\liblua.vcxproj">
+      <Project>{ddc3e27f-004d-4dd4-9dd3-931a013d2159}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BJMFoundation\BJMFoundation.vcxproj">
+      <Project>{d2c75113-637e-4736-b96c-02e0df0542de}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BJMGUI\BJMGUI.vcxproj">
+      <Project>{193431e9-682a-4b34-b5be-4897b56f23ef}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="classes\BJMScriptFactory.cpp" />
+    <ClCompile Include="classes\BJMScriptServer.cpp" />
+    <ClCompile Include="classes\lua\BJMLuaExecuteHandler.cpp" />
+    <ClCompile Include="classes\lua\BJMLuaFactory.cpp" />
+    <ClCompile Include="classes\lua\BJMLuaLoader.cpp" />
+    <ClCompile Include="classes\lua\BJMLuaServer.cpp" />
+    <ClCompile Include="classes\lua\BJMLuaUtil.cpp" />
+    <ClCompile Include="classes\lua\BJMScriptFix.cpp" />
+    <ClCompile Include="classes\lua\BJMScriptTypeConversion.cpp" />
+    <ClCompile Include="classes\precompile\BJMScriptPrecompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="classes\BJMScriptDefine.h" />
+    <ClInclude Include="classes\BJMScriptFactory.h" />
+    <ClInclude Include="classes\BJMScriptServer.h" />
+    <ClInclude Include="classes\lua\BJMLuaExecuteHandler.h" />
+    <ClInclude Include="classes\lua\BJMLuaFactory.h" />
+    <ClInclude Include="classes\lua\BJMLuaLoader.h" />
+    <ClInclude Include="classes\lua\BJMLuaServer.h" />
+    <ClInclude Include="classes\lua\BJMLuaUtil.h" />
+    <ClInclude Include="classes\lua\BJMScriptFix.h" />
+    <ClInclude Include="classes\lua\BJMScriptTypeConversion.h" />
+    <ClInclude Include="classes\precompile\BJMScriptPrecompiled.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
