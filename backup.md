@@ -23,3 +23,7 @@ http://blog.csdn.net/xjw532881071/article/details/50441651
 ## Cocos2dx-- 资源热更新
 
 http://blog.csdn.net/u010223072/article/details/49073511
+
+## git提取出两个版本之间的差异文件并打包
+
+git diff 608e120 4abe32e --name-only | xargs zip update.zip
