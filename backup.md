@@ -19,3 +19,7 @@ http://blog.csdn.net/peoplezhou/article/details/43307679
 ## cocos2d-x调用摄像头和相册并裁减图片
 
 http://blog.csdn.net/xjw532881071/article/details/50441651
+
+## Cocos2dx-- 资源热更新
+
+http://blog.csdn.net/u010223072/article/details/49073511
