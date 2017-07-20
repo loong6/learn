@@ -68,3 +68,7 @@ photoshop画布大小要和Cocos Studio 2场景编辑器中的画布大小相同
 这个工具不支持中文，因为Spine的LayersToPNG.jsx脚本就不支持，哈哈。
 如果没有在弹出窗口设置.csb文件名，这个工具根据.psd的文件名，生成.csd的文件名。
 这个工具根据photoshop中Layer的名字，来生成图片的名字，所以这个要策划先把命名规则给美术沟通好，游戏用图的命名规则，就是photoshop中Layer的命名规则，因为不支持中文，所以如果photoshop中Layer名为中文，那么最终输出的图片名为乱码？？？
+
+### 编译报错libcurl.a: No such file or directory   
+
+删除Application.mk中的APP_SHORT_COMMANDS := true
