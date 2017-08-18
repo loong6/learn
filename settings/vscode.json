@@ -1,0 +1,62 @@
+{
+    "sync.gist": "",
+    "sync.lastUpload": "",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.version": 244,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.workspaceSync": false,
+    "sync.anonymousGist": false,
+    "editor.fontSize": 15,
+    "editor.rulers": [
+        100
+    ],
+    "workbench.iconTheme": null,
+    "typescript.check.tscVersion": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        // "**/*.meta": true,
+        // "**/*.js.meta": true,
+        "**/temp/": true
+    },
+    "files.insertFinalNewline": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "indent",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.cursorBlinking": "smooth",
+    "search.quickOpen.includeSymbols": true,
+    "editor.renderWhitespace": "boundary",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "extensions.ignoreRecommendations": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.colorTheme": "Default Dark+",
+    "typescript.npm": "/Users/xl/.nvm/versions/node/v8.1.4/bin/npm",
+    "typescript.check.npmIsInstalled": false,
+    "editor.formatOnSave": true,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.autoIndent": true,
+    "editor.showFoldingControls": "always",
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "git.enableSmartCommit": true,
+    "pasteImage.path": "./image"
+}
