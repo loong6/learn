@@ -33,6 +33,69 @@ for file in `ls /etc`
 ```
 
 以上语句将/etc下目录的文件名遍历输出
+
+使用定义过的变量时要使用$,如下：   
+
+```shell
+your_name="test"
+echo $your_name
+echo ${your_name} #变量名外面的花括号是可选的，加不加都行，加花括号是为了帮助解释器识别变量的边界
+```
+
+已定义的变量 可以重新定义 如：
+
+```shell
+your_name="tom"
+echo ${your_name}
+your_name="toms"
+echo ${your_name}
+
+readonly your_name #将变量标识为只读
+unset your_name #删除变量  但不能删除只读的变量
+```
+
+### 变量的类型   
+
+1. 局部变量：当前脚步中定义的变量  
+2. 环境变量：
+3. shell变量： 
+
+### shell字符串    
+
+字符串是shell编程中最常用最有用的数据类型，字符串可以用单引号、双引号、甚至不用引号。   
+单引号字符串的限制：
+
+- 单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的；
+- 单引号字符串中不能出现单引号（即使转义也不行）
+
+**双引号字符串中可以有变量和转义字符出现**
+
+### 拼接字符串   
+
+```shell
+your_name="qinjx"
+greeting="hello, "${your_name}"!"
+greeting="hello, ${your_name}!"
+echo $greeting $greeting_1
+```
+
+### 获取字符串长度
+
+```shell
+string="nothing"
+echo ${#string} #输出7
+```
+
+### 提取子字符串  
+
+```shell
+string="runoob is a great site"
+echo ${string:1:4} #输出 unoo
+```
+
+
+
+
 ## 传参
 
 ## 数组
