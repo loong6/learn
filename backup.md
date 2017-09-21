@@ -31,3 +31,5 @@ git diff 608e120 4abe32e --name-only | xargs zip update.zip
 ## 编译报错libcurl.a: No such file or directory   
 
 删除Application.mk中的APP_SHORT_COMMANDS := true
+
+
